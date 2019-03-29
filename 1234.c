@@ -8,7 +8,7 @@ void main () {
     char palavra[200];
     int x, upperCase;
 
-    while (fgets(palavra, sizeof palavra, stdin) != NULL) {
+    while (gets(palavra)) {
         upperCase = 1;
 
         for (x = 0; x < strlen(palavra); x++) {
@@ -26,8 +26,6 @@ void main () {
             upperCase = 0;
         }
 
-        printf("%s", palavra);
+        printf("%s\n", palavra);
     }
-
-    printf("\n");
 }
